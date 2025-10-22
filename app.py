@@ -10,11 +10,11 @@ from PIL import Image
 # Encabezado e imagen
 # =========================
 st.title("Conversión de Texto a Audio · Sisabe")
-image = Image.open('gato_raton.png')
+image = Image.open('luciernaga.jpg')
 st.image(image, width=350)
 with st.sidebar:
     st.subheader("Escribe y/o selecciona texto para escucharlo.")
-    st.write("1) Revisa o edita el microcuento.\n2) Elige el idioma.\n3) Pulsa **Convertir a audio**.")
+    st.write("1) Revisa o edita el cuentecito.\n2) Elige el idioma.\n3) Pulsa **Convertir a audio**.")
 
 # Carpeta temporal segura
 os.makedirs("temp", exist_ok=True)
@@ -22,7 +22,7 @@ os.makedirs("temp", exist_ok=True)
 # =========================
 # Microcuento (cambiado)
 # =========================
-st.subheader("Un microcuento para dormir 😴")
+st.subheader("Un cuentecito para dormir 😴")
 
 nuevo_cuento = (
     "La luciérnaga más pequeña del bosque temblaba cada noche porque creía que su luz no alcanzaba. "
